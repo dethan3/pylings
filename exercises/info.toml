@@ -1,0 +1,119 @@
+[[exercises]]
+name = "variables1"
+path = "exercises/01_variables/variables1.py"
+mode = "test"
+hint = "Use the assignment operator (=) to assign a value to a variable."
+
+[[exercises]]
+name = "strings1"
+path = "exercises/02_strings/strings1.py"
+mode = "test"
+hint = "You can concatenate strings using the + operator."
+
+[[exercises]]
+name = "strings2"
+path = "exercises/02_strings/strings2.py"
+mode = "test"
+hint = "f-strings start with 'f' before the opening quote."
+
+[[exercises]]
+name = "numbers1"
+path = "exercises/03_numbers/numbers1.py"
+mode = "test"
+hint = "Python supports standard arithmetic operators: +, -, *, /."
+
+[[exercises]]
+name = "numbers2"
+path = "exercises/03_numbers/numbers2.py"
+mode = "test"
+hint = "Use int(), str(), and float() to convert between types."
+
+[[exercises]]
+name = "lists1"
+path = "exercises/04_lists/lists1.py"
+mode = "test"
+hint = "Lists are defined with square brackets []."
+
+[[exercises]]
+name = "lists2"
+path = "exercises/04_lists/lists2.py"
+mode = "test"
+hint = "Use .append() to add items and .remove() to delete items."
+
+[[exercises]]
+name = "if1"
+path = "exercises/05_if/if1.py"
+mode = "test"
+hint = "Use the 'if' keyword to check a condition."
+
+[[exercises]]
+name = "if2"
+path = "exercises/05_if/if2.py"
+mode = "test"
+hint = "Use 'elif' for multiple conditions and 'and' for combining them."
+
+[[exercises]]
+name = "loops1"
+path = "exercises/06_loops/loops1.py"
+mode = "test"
+hint = "Use 'for item in list:' to iterate."
+
+[[exercises]]
+name = "loops2"
+path = "exercises/06_loops/loops2.py"
+mode = "test"
+hint = "Use 'while condition:' to loop until the condition is false."
+
+[[exercises]]
+name = "functions1"
+path = "exercises/07_functions/functions1.py"
+mode = "test"
+hint = "Use 'def function_name():' to define a function."
+
+[[exercises]]
+name = "functions2"
+path = "exercises/07_functions/functions2.py"
+mode = "test"
+hint = "Functions can take arguments and return values using 'return'."
+
+[[exercises]]
+name = "dicts1"
+path = "exercises/08_dictionaries/dicts1.py"
+mode = "test"
+hint = "Dictionaries are defined with curly braces {} and key-value pairs."
+
+[[exercises]]
+name = "dicts2"
+path = "exercises/08_dictionaries/dicts2.py"
+mode = "test"
+hint = "You can add, modify, or remove key-value pairs in a dictionary."
+
+[[exercises]]
+name = "classes1"
+path = "exercises/09_classes/classes1.py"
+mode = "test"
+hint = "Use 'class ClassName:' to define a class and '__init__' for initialization."
+
+[[exercises]]
+name = "classes2"
+path = "exercises/09_classes/classes2.py"
+mode = "test"
+hint = "Use 'class Child(Parent):' to inherit from a parent class."
+
+[[exercises]]
+name = "exceptions1"
+path = "exercises/10_exceptions/exceptions1.py"
+mode = "test"
+hint = "Use 'try:' and 'except ValueError:' to catch the error."
+
+[[exercises]]
+name = "files1"
+path = "exercises/11_files/files1.py"
+mode = "test"
+hint = "Use 'open(filename, mode)' to open a file. Modes: 'w' for write, 'r' for read."
+
+[[exercises]]
+name = "personal_card"
+path = "exercises/projects/personal_card/main.py"
+mode = "project"
+hint = "Check the README in the project folder for instructions."

@@ -1,161 +1,72 @@
-# 🐍 Python Learn by Doing - ADHD友好学习计划
+# 🐍 Pylings - Interactive Python Learning
 
-> 📅 开始时间: 2025-07-09  
-> 🎯 目标: 通过20+个实用项目掌握Python基础，为AI工程师之路打基础  
-> 🧠 特色: 专为ADHD学习者设计的渐进式项目学习法
+Welcome to **Pylings**! This project is designed to help you learn Python through interactive exercises, similar to the famous Rustlings project.
 
-## 🌟 项目特色
+> 🎯 **Goal**: Learn Python by fixing broken code and passing tests.
+> 🧠 **Philosophy**: Learn by Doing. Small, focused exercises with immediate feedback.
 
-- **🎯 Learn by Doing**: 每天一个小项目，立即看到成果
-- **🧠 ADHD友好**: 短期目标、任务切换、即时反馈
-- **📈 渐进式学习**: 从基础语法到面向对象编程
-- **🔄 灵活切换**: 支持与TypeScript学习并行
-- **📚 详细文档**: 每个项目都有完整的代码解析
+## 🚀 Quick Start
 
-## 📁 项目结构
+### 1. Setup
 
-```md
+You can set up the environment automatically using the provided script:
+
+```bash
+./setup.sh
+```
+
+### 2. Start Learning
+
+Activate the virtual environment and start the interactive runner:
+
+```bash
+source .venv/bin/activate
+python3 pylings.py watch
+```
+
+The runner will:
+1.  Run the current exercise.
+2.  Show you the error output if it fails.
+3.  Wait for you to fix the code.
+4.  Automatically move to the next exercise when you pass!
+
+## 📁 Project Structure
+
+```
 python-learning/
-├── README.md                    # 项目总览
-├── learning_progress.md         # 学习进度追踪
-├── utils/
-│   └── common_functions.py      # 公共工具函数库
-├── week1/                       # Week 1: Python基础语法
-│   ├── day1-personal-card/      # Day 1: 个人信息卡片生成器
-│   │   ├── main.py             # 主程序
-│   │   ├── README.md           # 项目说明
-│   │   └── code_explanation.md # 代码逐行解析
-│   ├── day2-calculator/         # Day 2: 智能计算器
-│   ├── day3-greeting-bot/       # Day 3: 个性化问候机器人
-│   ├── day4-password-gen/       # Day 4: 密码生成器
-│   └── day5-todo-manager/       # Day 5: 待办事项管理器
-├── week2/                       # Week 2: 数据结构与函数
-├── week3/                       # Week 3: 文件操作与异常处理
-└── week4/                       # Week 4: 面向对象编程
+├── exercises/           # ✍️ Your Code Goes Here!
+│   ├── 01_variables/    # Variables
+│   ├── 02_strings/      # Strings
+│   ├── 03_numbers/      # Numbers
+│   ├── 04_lists/        # Lists
+│   ├── 05_if/           # Control Flow
+│   ├── 06_loops/        # Loops
+│   ├── 07_functions/    # Functions
+│   ├── 08_dictionaries/ # Dictionaries
+│   ├── 09_classes/      # Classes & OOP
+│   ├── 10_exceptions/   # Error Handling
+│   ├── 11_files/        # File I/O
+│   └── projects/        # Larger projects
+├── tests/               # 🧪 Automated Tests (Don't peek unless stuck!)
+├── pylings.py           # 🏃 The CLI Runner
+└── setup.sh             # 🛠️ Setup Script
 ```
 
-## �️ 学习计划
+## 📝 How to Solve Exercises
 
-### Week 1: Python 基础语法 (5天)
+1.  **Read the Error**: The runner output will tell you what went wrong.
+2.  **Open the File**: Go to the file path shown in the runner (e.g., `exercises/01_variables/variables1.py`).
+3.  **Fix the Code**: Follow the instructions in the comments (look for `TODO`).
+4.  **Remove the Marker**: Delete the line `# I AM NOT DONE` when you think you've solved it.
+5.  **Save**: The runner will automatically check your solution.
 
-- [x] **Day 1**: 个人信息卡片生成器 - 变量、字符串、f-string
-- [ ] **Day 2**: 智能计算器 - 数字类型、运算符、用户输入
-- [ ] **Day 3**: 个性化问候机器人 - 条件判断、逻辑运算
-- [ ] **Day 4**: 密码生成器 - 循环结构、random模块
-- [ ] **Day 5**: 待办事项管理器 - 列表操作、数据持久化
+## 🤝 Contributing
 
-### Week 2: 数据结构与函数 (5天)
-
-- [ ] **Day 1**: 个人财务追踪器 - 字典操作
-- [ ] **Day 2**: 单词学习助手 - 集合运算
-- [ ] **Day 3**: 数学工具包 - 函数基础
-- [ ] **Day 4**: 数据清洗工具包 - 高级函数特性
-- [ ] **Day 5**: 性能监测器 - 作用域和装饰器
-
-### Week 3: 文件操作与异常处理 (5天)
-
-- [ ] **Day 1**: 日记本应用 - 文件读写
-- [ ] **Day 2**: 成绩单分析器 - CSV数据处理
-- [ ] **Day 3**: 配置文件管理器 - JSON数据处理
-- [ ] **Day 4**: 健壮的文件处理器 - 异常处理
-- [ ] **Day 5**: 文本模式提取器 - 正则表达式
-
-### Week 4: 面向对象编程 (5天)
-
-- [ ] **Day 1**: 图书管理系统 - 类和对象基础
-- [ ] **Day 2**: 动物园管理系统 - 继承和多态
-- [ ] **Day 3**: 智能数学向量类 - 特殊方法
-- [ ] **Day 4**: 智能温度转换器 - 属性和方法
-- [ ] **Day 5**: 个人理财管理系统 - 综合练习
-
-## � 快速开始
-
-### 1. 克隆项目
-
-```bash
-git clone https://github.com/YOUR_USERNAME/python-learning.git
-cd python-learning
-```
-
-### 2. 运行第一个项目
-
-```bash
-cd week1/day1-personal-card
-python main.py
-```
-
-### 3. 查看代码解析
-
-打开 `week1/day1-personal-card/code_explanation.md` 了解每行代码的含义
-
-## �💡 ADHD 学习贴士
-
-### 注意力管理
-
-- **🍅 25分钟专注**: 使用番茄工作法
-- **🔄 任务切换**: 感到疲劳时切换到TypeScript
-- **🎵 背景音乐**: 选择有助于专注的音乐
-- **⏰ 最佳时段**: 找到自己注意力最集中的时间
-
-### 动机维持
-
-- **🎁 即时奖励**: 完成项目后给自己小奖励
-- **📊 进度可视化**: 使用 `learning_progress.md` 追踪进度
-- **📱 分享成果**: 在社交媒体分享学习成果
-- **👥 寻找伙伴**: 找到学习伙伴互相监督
-
-### 学习技巧
-
-- **🔍 主动探索**: 不局限于项目要求，尝试扩展
-- **🐛 拥抱错误**: 把bug当作学习机会
-- **📝 记录思考**: 写下学习过程中的思考
-- **🔗 建立联系**: 将新知识与已知概念联系
-
-## � 学习进度
-
-- **总项目数**: 20+
-- **已完成**: 1/20+
-- **当前进度**: Week 1 Day 1 ✅
-- **下一个目标**: Week 1 Day 2 - 智能计算器
-
-## �️ 技术栈
-
-- **Python 3.x**: 主要编程语言
-- **标准库**: datetime, random, json, csv, re等
-- **开发工具**: VS Code, Git
-- **文档**: Markdown
-
-## 🎯 学习目标
-
-### 短期目标 (4-6周)
-
-- ✅ 掌握Python基础语法
-- ✅ 理解面向对象编程
-- ✅ 熟练使用常用标准库
-- ✅ 具备独立开发小项目的能力
-
-### 长期目标
-
-- 🚀 **Web开发**: Flask/Django框架
-- 📊 **数据科学**: NumPy、Pandas深入学习  
-- 🤖 **AI/ML**: 机器学习算法实现
-- ⚡ **自动化**: 脚本编写和任务自动化
-- 🔗 **API开发**: RESTful API设计和实现
-
-## 🤝 贡献
-
-欢迎提交Issue和Pull Request来改进这个学习计划！
-
-## 📄 许可证
-
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
-## 🙏 致谢
-
-感谢所有为Python学习社区做出贡献的开发者们！
+Feel free to add more exercises or improve existing ones! Check `exercises/info.toml` to see how exercises are registered.
 
 ---
+**Happy Coding!** 🐍
 
-**开始你的Python学习之旅吧！** 🚀
+## License
 
-记住：每一个专家都曾经是初学者。保持耐心，享受编程的乐趣！
+MIT
